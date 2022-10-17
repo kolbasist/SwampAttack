@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Player _target;
 
     public event UnityAction Dying;
+
     public Player Target => _target;
 
     public void TakeDamage(int damage)
@@ -21,10 +22,5 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    public Player GetTarget()
-    {
-        return _target;
     }
 }

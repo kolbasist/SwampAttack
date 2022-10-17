@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private Weapon _currentWeapon;
     private int _currentHealth;
     private Animator _animator;
+
     public int Money { get; private set; }
 
 
@@ -31,8 +32,17 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnenemyDying(int reward)
+    public void OnenemyDyied(int reward)
     {
         Money += reward;
+    }
+
+    public void AplyDamage(int damage)
+    {
+        if (damage >= 0)
+            _currentHealth -= damage;
+
+        if (_currentHealth <= 0)
+            Destroy(gameObject);
     }
 }
