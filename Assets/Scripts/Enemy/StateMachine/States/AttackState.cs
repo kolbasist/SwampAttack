@@ -25,8 +25,7 @@ public class AttackState : State
             _lastAttackTime = _delay;
         }
 
-        _lastAttackTime -= Time.deltaTime;
-        Debug.Log("Last attack time: " + _lastAttackTime);
+        _lastAttackTime -= Time.deltaTime;        
     }
 
     private void Attack(Player target)

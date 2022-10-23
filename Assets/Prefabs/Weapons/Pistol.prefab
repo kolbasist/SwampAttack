@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017daec2d60437f4eb5b83608b32c22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _label: 1911
-  _price: 0
+  _label: M9
+  _price: 1
   _icon: {fileID: 21300000, guid: 9b3741b3902eb13408aafc033c24cd49, type: 3}
   _isBuyed: 1
   Bullet: {fileID: 1080976211732796, guid: 7f77bb5e8f1dbd0478b16e52c857428b, type: 3}
